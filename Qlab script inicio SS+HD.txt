@@ -15,7 +15,7 @@ tell application "Terminal"
 	end if
 	
 	-- Correr SS-R250N
-	set firstCommand to "/usr/local/bin/python3 /Users/fredericopereira/Desktop/ssr250ncontrol/ss-r250nudpcontrol.py 5 192.168.1.206 ss"
+	set firstCommand to "/usr/local/bin/python3 [ss-r250nudpcontrol.py location] 5 [IP] ss"
 	do script firstCommand in targetWindow
 	
 	-- Abrir novo separador
@@ -33,7 +33,7 @@ tell application "Terminal"
 	end if
 	
 	-- Correr HD-R1
-	set secondCommand to "/usr/local/bin/python3 /Users/fredericopereira/Desktop/hdr1control/hd-r1udpcontrol.py 5 192.168.1.201 hd"
+	set secondCommand to "/usr/local/bin/python3 [hd-r1udpcontrol.py location] 5 [IP] hd"
 	do script secondCommand in targetWindow
 	
 end tell
