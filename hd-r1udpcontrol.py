@@ -15,7 +15,7 @@ elif len(sys.argv) == 4:
 deviceID=sys.argv[1]
 print("Selected Device ID %s" % deviceID)
 UDP_IP="127.0.0.1" #IP localhost
-UDP_PORT=5005
+UDP_PORT=5006
 
 host='none'
 port='none'
